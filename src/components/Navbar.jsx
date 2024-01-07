@@ -11,11 +11,11 @@ const Navbar = ({ activeNav }) => {
   }
   return (
     <div className=' flex justify-between bg-white shadow-md h-[4rem] py-[0.625rem] px-[1rem] mobile:px[2rem] tablet:px-[5rem]'>
-      <img src='./logo.png' alt="logo" />
+      <img className='w-[150px] mobile:w-[180px] tablet:w-[208px]' src='./logo.png' alt="logo" />
 
       <div className={` flex justify-end items-center tablet:justify-between w-full`}>
         <ul 
-        className={`${navToggle === true ? "flex w-full absolute left-0 top-14 gap-2 flex-col bg-white2 py-2 px-2" : "tablet:flex hidden items-center w-[85%] justify-center"} font-semibold text-black text-sm`}>
+        className={`${navToggle === true ? "flex w-full absolute left-0 top-14 gap-2 flex-col bg-white2 z-30 py-2 px-2" : "tablet:flex hidden items-center w-[85%] justify-center"} font-semibold text-black text-sm`}>
             <li className=' hover:bg-gray py-2 px-2 hover:text-secondary'>
               <Link to={'/'} className={`${activeNav === 'home' ? "text-secondary" : "text-black"}`}>Home</Link>
             </li>

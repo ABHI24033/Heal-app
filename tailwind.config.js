@@ -14,13 +14,17 @@ export default {
       white:"#fff",
       white2:"#F9F4FE",
       gray:"#E9E9EB",
+      transparent:'transparent',
+      red:'red',
+      white3:'#FDFCFD',
+      black2:'#000000'
       
 
       // ...
     },
     screens: {
       'mobile': '430px',
-      'tablet': '854px',
+      'tablet': '875px',
       'desktop': '1280px',
     },
 
