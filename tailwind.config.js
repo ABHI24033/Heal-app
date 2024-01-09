@@ -6,7 +6,9 @@ export default {
 ],
 
   theme: {
-    extend: {},
+    extend: {
+      
+    },
     colors: {
       primary: '#32856E',
       secondary: '#52CFAC',
@@ -23,7 +25,7 @@ export default {
       // ...
     },
     screens: {
-      'mobile': '430px',
+      'mobile': '450px',
       'tablet': '875px',
       'desktop': '1280px',
     },

@@ -6,11 +6,12 @@ import Bannerbottom from '../components/Home/Bannerbottom';
 import Features from '../components/Home/Features';
 import FeaturesBottom from '../components/Home/FeaturesBottom';
 import OurUser from '../components/Home/OurUser';
+import ConnectWithUs from '../components/Home/ConnectWithUs';
 const Home = ({activeNav}) => {
   activeNav("home");
     
   return (
-    <div>
+    <div className=' bg-gray'>
       {/* banner */}
       <Banner/>
       {/* banner bottom */}
@@ -21,6 +22,8 @@ const Home = ({activeNav}) => {
       <FeaturesBottom/>
       {/* our users */}
       <OurUser/>
+      {/* connect with us */}
+      <ConnectWithUs/>
     </div>
   );
 }

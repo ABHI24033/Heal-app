@@ -5,7 +5,7 @@ import apple from '../../assets/img/apple.png';
 import doctor from '../../assets/img/doctor.png';
 const Banner = () => {
   return (
-    <div className=' relative'>
+    <div className=' relative bg-white'>
       <div>
         
       </div>

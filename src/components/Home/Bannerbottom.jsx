@@ -6,7 +6,7 @@ import facilityframe from '../../assets/img/facilityframe.png';
 
 const Bannerbottom = () => {
   return (
-    <div className=' w-full bg-white3 flex flex-wrap gap-3 justify-center mobile:justify-between items-center h-auto  px-8 tablet:px-[80px] py-[40px] shadow-md shadow-gray'>
+    <div className=' w-full bg-white3 flex flex-wrap gap-3 justify-center mobile:justify-between items-center h-auto  px-8 tablet:px-[80px] py-[40px] shadow-lg shadow-gray border border-gray '>
 
         <div className='flex mobile:flex-row bg-white gap-2 w-[218px] tablet:w-[300px] h-[98px] px-4 py-4  drop-shadow-lg shadow-black2 rounded '>
           <img src={doctorFrame} alt="doctor-frame" />

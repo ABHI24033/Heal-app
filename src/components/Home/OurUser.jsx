@@ -54,41 +54,42 @@ const OurUser = () => {
       {/* carousel */}
 
       <Swiper
-        // install Swiper modules
+        //  modules
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         slidesPerView={1}
-        navigation
+        // navigation
         autoplay={{ delay: 5000 }}
         pagination={{ clickable: true }}
 
       >
 
         {
-          data?.map((item,index) => {
+          data?.map((item, index) => {
             return (
-              // <>
-                <SwiperSlide key={index}>
-                  <div className=' flex w-[90%] h-[30rem] bg-white3 mx-auto'>
-                    <div className='w-1/2 h-[90%]'>
-                    <img src={item.img} alt="testimonial" className='h-[100%]' />
+              
+              <SwiperSlide key={index}>
+                <div className=' w-[90%] bg-white3 mx-auto rounded-md h-[34rem] mobile:h-[26rem] tablet:h-[30rem]'>
+
+                  <div className=' flex flex-col mobile:flex-row h-[100%] mobile:h-[90%]'>
+
+                    <div className=' flex items-center justify-center w-full mobile:w-[45%] tablet:w-1/2 h-[50%] mobile:h-[100%]'>
+                      <img src={item.img} alt="testimonial" className='h-[100%]' />
                     </div>
-                   
-                    <div className=' flex flex-col items-start justify-center pr-10 w-1/2'>
-                      <p className='text-lg font-normal'>{item.desc}</p>
-                      <h3 className='text-xl font-semibold'>{item.name}</h3>
-                      <button className=' bg-primary hover:bg-secondary px-6 py-3 text-white font-semibold text-base rounded-md mt-5'>{item.btn}</button>
+
+                    <div className=' flex flex-col items-start justify-center w-full mobile:w-[55%] tablet:w-1/2 my-4'>
+                      <p className='text-xs mobile:text-sm tablet:text-lg font-normal mx-4'>{item.desc}</p>
+                      <h3 className='text-sm mobile:text-base tablet:text-xl font-semibold mx-4 my-2'>{item.name}</h3>
+                      <button className=' bg-primary hover:bg-secondary px-6 py-3 text-white font-semibold text-base rounded-md mt-5 mx-4'>{item.btn}</button>
                     </div>
                   </div>
-                </SwiperSlide>
-              // </>
+
+                </div>
+              </SwiperSlide>
+              
             )
           })
         }
-
-       
-
       </Swiper>
-
     </div>
   );
 }
