@@ -2,7 +2,7 @@ import React from 'react';
 
 import doctorFrame from '../../assets/img/doctorFrame.png';
 import hospitalFrame from '../../assets/img/hospitalframe.png';
-import facilityframe from '../../assets/img/facilityframe.png';
+import facilityframe from '../../assets/img/facilityFrame.png';
 
 const Bannerbottom = () => {
   return (
